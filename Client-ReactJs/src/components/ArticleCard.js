@@ -14,7 +14,6 @@ export default function ArticleCard({ article }) {
 
   return (
     <div className="border border-gray-200 rounded-lg p-6 bg-white">
-      {/* Title + status */}
       <div className="flex justify-between items-start gap-4 mb-4">
         <h2 className="text-lg font-semibold text-gray-900">
           {article.title}
@@ -31,7 +30,6 @@ export default function ArticleCard({ article }) {
         </span>
       </div>
 
-      {/* Original content */}
       <p className="text-sm text-gray-700 mb-2">
         {expandOriginal
           ? article.content
@@ -47,7 +45,6 @@ export default function ArticleCard({ article }) {
         </button>
       )}
 
-      {/* AI Enhanced content */}
       {article.updated_content && (
         <div className="p-4 bg-gray-50 rounded border mb-4">
           <p className="text-xs font-semibold text-gray-600 mb-2">
@@ -71,7 +68,6 @@ export default function ArticleCard({ article }) {
         </div>
       )}
 
-      {/* Source */}
       {article.source_url && (
         <a
           href={article.source_url}

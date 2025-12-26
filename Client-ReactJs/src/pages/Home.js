@@ -23,7 +23,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-6 py-12">
-        {/* Header (UNCHANGED) */}
         <header className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             AI Articles
@@ -33,9 +32,8 @@ export default function Home() {
           </p>
         </header>
 
-        {/* Content */}
         {loading ? (
-          <p className="text-gray-500">Loading articles...</p>
+          <p className="text-gray-500">Please wait! As the server takes a little while to respond.</p>
         ) : (
           <ArticleList articles={articles} />
         )}

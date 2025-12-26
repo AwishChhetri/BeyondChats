@@ -2,7 +2,7 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 
 const BASE_URL = "https://beyondchats.com";
-const LARAVEL_API = "http://127.0.0.1:8000/api/articles";
+const LARAVEL_API = "https://server-bogs.onrender.com/api/articles";
 
 async function getLastPageNumber() {
   const { data } = await axios.get(`${BASE_URL}/blogs/`);
